@@ -16,10 +16,10 @@ RUN groupadd -r curator && useradd -r -g curator curator
 RUN pip install elasticsearch-curator==5.4.0
 
 COPY docker-entrypoint.sh /
+COPY action.yml /
+COPY config.yml /
 
 ENV INTERVAL_IN_HOURS=24
-ENV OLDER_THAN_IN_DAYS="20"
-ENV ELASTICSEARCH_HOST=elasticsearch
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
