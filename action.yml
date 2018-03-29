@@ -1,4 +1,4 @@
-ctions:
+actions:
   1:
     action: delete_indices
     description: delete indices
