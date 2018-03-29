@@ -5,9 +5,7 @@ actions:
     filters:
     -
       filtertype: age
-      source: name
+      source: creation_date
       direction: older
-      timestring: '%Y.%m.%d'
       unit: days 
       unit_count: 10
-      exclude:
