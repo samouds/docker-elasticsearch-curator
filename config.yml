@@ -1,4 +1,4 @@
-ient:
+client:
   hosts:
     - elasticsearch
   port: 9200
