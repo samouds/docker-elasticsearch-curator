@@ -3,9 +3,8 @@ actions:
     action: delete_indices
     description: delete indices
     filters:
-    -
-      filtertype: age
+    - filtertype: age
       source: creation_date
       direction: older
       unit: days 
-      unit_count: 10
+      unit_count: ${OLDER_THAN_IN_DAYS}
